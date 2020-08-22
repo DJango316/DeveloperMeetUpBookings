@@ -1,0 +1,13 @@
+D:\Zupa\DeveloperMeetUpBookings\DeveloperMeetUpBookings.Database\bin\Debug\DeveloperMeetUpBookings.Database.exe.config
+D:\Zupa\DeveloperMeetUpBookings\DeveloperMeetUpBookings.Database\bin\Debug\DeveloperMeetUpBookings.Database.exe
+D:\Zupa\DeveloperMeetUpBookings\DeveloperMeetUpBookings.Database\bin\Debug\DeveloperMeetUpBookings.Database.pdb
+D:\Zupa\DeveloperMeetUpBookings\DeveloperMeetUpBookings.Database\bin\Debug\dbup-core.dll
+D:\Zupa\DeveloperMeetUpBookings\DeveloperMeetUpBookings.Database\bin\Debug\dbup-sqlserver.dll
+D:\Zupa\DeveloperMeetUpBookings\DeveloperMeetUpBookings.Database\bin\Debug\Microsoft.Azure.Services.AppAuthentication.dll
+D:\Zupa\DeveloperMeetUpBookings\DeveloperMeetUpBookings.Database\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+D:\Zupa\DeveloperMeetUpBookings\DeveloperMeetUpBookings.Database\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.xml
+D:\Zupa\DeveloperMeetUpBookings\DeveloperMeetUpBookings.Database\obj\Debug\DeveloperMeetUpBookings.Database.csprojAssemblyReference.cache
+D:\Zupa\DeveloperMeetUpBookings\DeveloperMeetUpBookings.Database\obj\Debug\DeveloperMeetUpBookings.Database.csproj.CoreCompileInputs.cache
+D:\Zupa\DeveloperMeetUpBookings\DeveloperMeetUpBookings.Database\obj\Debug\DeveloperMeetUpBookings.Database.csproj.CopyComplete
+D:\Zupa\DeveloperMeetUpBookings\DeveloperMeetUpBookings.Database\obj\Debug\DeveloperMeetUpBookings.Database.exe
+D:\Zupa\DeveloperMeetUpBookings\DeveloperMeetUpBookings.Database\obj\Debug\DeveloperMeetUpBookings.Database.pdb
