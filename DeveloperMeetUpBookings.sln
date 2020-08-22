@@ -27,7 +27,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeveloperMeetUpBookings.Uni
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DeveloperMeetUpBookings.Repository", "DeveloperMeetUpBookings.Repository", "{1E43C4CA-889B-4DC3-908C-3AB2E58516BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeveloperMeetUpBookings.Repository", "DeveloperMeetUpBooking.NHibernate\DeveloperMeetUpBookings.Repository.csproj", "{81CE5528-0E65-4CC2-844A-A4318B5A357E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeveloperMeetUpBookings.Repository", "DeveloperMeetUpBookings.Repository\DeveloperMeetUpBookings.Repository.csproj", "{81CE5528-0E65-4CC2-844A-A4318B5A357E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeveloperMeetUpBookings.Repository.UnitTest", "DeveloperMeetUpBookings.Repository.UnitTest\DeveloperMeetUpBookings.Repository.UnitTest.csproj", "{94965524-BB95-4F51-9F49-2976E41BD3D9}"
 EndProject
