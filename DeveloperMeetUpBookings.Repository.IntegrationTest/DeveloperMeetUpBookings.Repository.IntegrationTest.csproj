@@ -80,7 +80,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DeveloperMeetUpBooking.NHibernate\DeveloperMeetUpBookings.Repository.csproj">
+    <ProjectReference Include="..\DeveloperMeetUpBookings.Repository\DeveloperMeetUpBookings.Repository.csproj">
       <Project>{81ce5528-0e65-4cc2-844a-a4318b5a357e}</Project>
       <Name>DeveloperMeetUpBookings.Repository</Name>
     </ProjectReference>

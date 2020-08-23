@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace DeveloperMeetUpBookings.NHibernate.Repositories
+namespace DeveloperMeetUpBookings.Repository.Repositories
 {
     public class SeatRepository : ISeatRepository
     {

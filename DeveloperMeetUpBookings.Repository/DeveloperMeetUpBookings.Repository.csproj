@@ -170,8 +170,8 @@
     <Compile Include="Models\Booking.cs" />
     <Compile Include="Models\Seat.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repositories\BookingRepository.cs" />
-    <Compile Include="Repositories\IBookingRepository.cs" />
+    <Compile Include="Repositories\BookingCRUDRepository.cs" />
+    <Compile Include="Repositories\IBookingCRUDRepository.cs" />
     <Compile Include="Repositories\ISeatRepository.cs" />
     <Compile Include="Repositories\SeatRepository.cs" />
   </ItemGroup>

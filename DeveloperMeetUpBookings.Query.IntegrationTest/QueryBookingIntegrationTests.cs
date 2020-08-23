@@ -26,7 +26,25 @@ namespace DeveloperMeetUpBookings.Query.IntegrationTest
                 Name = "James Blackburn",
                 Email = "james.r.b@hotmail.co.uk",
                 Address = "108 Cranbourne Park",
-                SeatId = "A1"
+                SeatId = "A1",
+                MeetingWeek = "1"
+            };
+
+            var result = _bookingRepository.CheckIfBookingAvailable(booking);
+
+            Assert.IsNotNull(result);
+        }
+
+        [TestMethod]
+        public void CheckForMoreThanFourSeats()
+        {
+            var booking = new Booking()
+            {
+                Name = "James Blackburn",
+                Email = "james.r.b@hotmail.co.uk",
+                Address = "108 Cranbourne Park",
+                SeatId = "J5,J6,J7,J8,J9",
+                MeetingWeek = "1"
             };
 
             var result = _bookingRepository.CheckIfBookingAvailable(booking);
@@ -42,7 +60,8 @@ namespace DeveloperMeetUpBookings.Query.IntegrationTest
                 Name = "Jame Blackburn",
                 Email = "james.r.b@hotmail.co.uk",
                 Address = "108 Cranbourne Park",
-                SeatId = "A1"
+                SeatId = "A1",
+                MeetingWeek = "5"
             };
 
             var result = _bookingRepository.CheckIfBookingAvailable(booking);
