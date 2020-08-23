@@ -37,9 +37,9 @@ namespace DeveloperMeetUpBookings.Controllers
                 MeetingWeek = booking.MeetingWeek
             };
 
-            var result = _bookingService.CheckBookingIsAvailable(queryBookingModel);
+            var result = _bookingService.CheckBookingExists(queryBookingModel);
 
-            if(result)
+            if(result == false)
             {
                 var insertedBookingModel = new Repository.Booking()
                 {
@@ -56,7 +56,7 @@ namespace DeveloperMeetUpBookings.Controllers
             }
             else
             {
-                //More than 4 seats or Booking already exists!
+                //More than 4 seats or Booking already exists for seat!
                 return null;
             }
         }

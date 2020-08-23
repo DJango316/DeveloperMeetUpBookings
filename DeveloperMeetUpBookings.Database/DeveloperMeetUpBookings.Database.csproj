@@ -98,5 +98,23 @@
   <ItemGroup>
     <EmbeddedResource Include="Scripts\0011.Alter CheckIfAvailable SP.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\0014.Alter CheckIfAvailable SP.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\0012.Alter Booking Name column.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\0013.Alter Booking Email column.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\0015.Alter CheckIfAvailable SP.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\0016.Update values for Name and Email columns.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\0017.Update values for Name and Email columns.sql" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

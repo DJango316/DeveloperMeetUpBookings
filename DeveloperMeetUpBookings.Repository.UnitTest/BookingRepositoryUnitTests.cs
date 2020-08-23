@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using DeveloperMeetUpBookings.NHibernate.Repositories;
+using DeveloperMeetUpBookings.Repository;
 using DeveloperMeetUpBookings.Repository.Helpers;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
