@@ -19,7 +19,7 @@ namespace DeveloperMeetUpBookings.Services
             _bookingCRUDRepository = bookingCRUDRepository;
         }
 
-        public bool CheckBookingIsAvailable(Booking booking)
+        public bool CheckBookingExists(Booking booking)
         {
             var result = _bookingRepository.CheckIfBookingAvailable(booking);
 

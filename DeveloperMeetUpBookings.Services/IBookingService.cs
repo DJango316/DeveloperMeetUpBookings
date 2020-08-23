@@ -8,7 +8,7 @@ namespace DeveloperMeetUpBookings.Services
 {
     public interface IBookingService
     {
-        bool CheckBookingIsAvailable(Booking booking);
+        bool CheckBookingExists(Booking booking);
 
         Repository.Booking InsertBooking(Repository.Booking booking);
     }

@@ -1,4 +1,4 @@
-﻿using DeveloperMeetUpBookings.NHibernate.Repositories;
+﻿using DeveloperMeetUpBookings.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Linq;
-using DeveloperMeetUpBookings.NHibernate.Repositories;
+using DeveloperMeetUpBookings.Repository;
 using DeveloperMeetUpBookings.Repository.IntegrationTest.Helpers;
+using DeveloperMeetUpBookings.Repository.Repositories;
 using FluentNHibernate;
 using FluentNHibernate.Cfg.Db;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -12,14 +13,14 @@ namespace DeveloperMeetUpBookings.Repository.IntegrationTest
     [TestClass]
     public class IntegrationTests
     {
-        IBookingRepository _bookingRepository;
+        IBookingCRUDRepository _bookingRepository;
         ISession session;
 
         [TestInitialize]
         public void Setup()
         {
             session = NHibernateHelper.GetCurrentSession();
-            _bookingRepository = new BookingRepository();
+            _bookingRepository = new BookingCRUDRepository();
         }
 
         [TestMethod]
@@ -30,14 +31,19 @@ namespace DeveloperMeetUpBookings.Repository.IntegrationTest
                 Name = "test add",
                 Email = "test@test.test",
                 Address = "address test",
-                SeatId = "J10"
+                SeatId = "J10",
+                MeetingWeek = "6"
             };
 
             _bookingRepository.InsertBooking(booking);
 
+            //TODO Query back results from test
             var query = session.QueryOver<Booking>().Where(x => x.Name == booking.Name).SingleOrDefault();
 
             Assert.IsNotNull(query);
+
+            session.Delete(query);
+            session.Flush();
         }
     }
 }
