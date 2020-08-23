@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace DeveloperMeetUpBookings.Repository.Repositories
+namespace DeveloperMeetUpBookings.Queries.Repositories
 {
-    public class ISeatRepository
+    public interface ISeatRepository
     {
     }
 }

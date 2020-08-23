@@ -83,5 +83,20 @@
     <EmbeddedResource Include="Scripts\0002.Create Seat Table.sql" />
     <EmbeddedResource Include="Scripts\0001.Create Database.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\0007.Add Week Column to Booking Table.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\0008.Add values to Week column.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\0009.Alter Week Column Name and Add more rows.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\0010.Alter CheckIfAvailable SP.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\0011.Alter CheckIfAvailable SP.sql" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

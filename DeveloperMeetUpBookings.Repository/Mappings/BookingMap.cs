@@ -16,6 +16,7 @@ namespace DeveloperMeetUpBookings.Repository.Mappings
             Map(x => x.Email);
             Map(x => x.Address);
             Map(x => x.SeatId);
+            Map(x => x.MeetingWeek);
         }
     }
 }

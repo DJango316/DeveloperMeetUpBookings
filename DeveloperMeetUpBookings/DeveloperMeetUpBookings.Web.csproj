@@ -175,6 +175,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Booking.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -229,7 +230,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
     <Folder Include="Views\Booking\" />
   </ItemGroup>
   <ItemGroup>
@@ -260,6 +260,20 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DeveloperMeetUpBookings.Queries\DeveloperMeetUpBookings.Query.csproj">
+      <Project>{E128666D-56B5-4719-A028-9869F374832C}</Project>
+      <Name>DeveloperMeetUpBookings.Query</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DeveloperMeetUpBookings.Repository\DeveloperMeetUpBookings.Repository.csproj">
+      <Project>{81ce5528-0e65-4cc2-844a-a4318b5a357e}</Project>
+      <Name>DeveloperMeetUpBookings.Repository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DeveloperMeetUpBookings.Services\DeveloperMeetUpBookings.Services.csproj">
+      <Project>{6fce6ff3-f137-49d2-9c89-5b1139fb9a3f}</Project>
+      <Name>DeveloperMeetUpBookings.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

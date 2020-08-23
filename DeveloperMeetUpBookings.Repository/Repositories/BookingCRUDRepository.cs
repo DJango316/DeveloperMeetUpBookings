@@ -6,11 +6,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace DeveloperMeetUpBookings.NHibernate.Repositories
+namespace DeveloperMeetUpBookings.Repository.Repositories
 {
-    public class BookingRepository : IBookingRepository
+    public class BookingCRUDRepository : IBookingCRUDRepository
     {
-        public void InsertBooking(Booking booking)
+        public Booking InsertBooking(Booking booking)
         {
             ISession session = NHibernateHelper.GetCurrentSession();
             ITransaction trans = session.BeginTransaction();
@@ -25,6 +25,8 @@ namespace DeveloperMeetUpBookings.NHibernate.Repositories
            // trans.Commit();
 
             session.SaveOrUpdate(booking);
+
+            return booking;
         }
     }
 }

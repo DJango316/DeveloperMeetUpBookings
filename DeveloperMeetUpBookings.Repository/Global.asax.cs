@@ -1,6 +1,6 @@
 ﻿using Autofac;
 using Autofac.Integration.WebApi;
-using DeveloperMeetUpBookings.NHibernate.Repositories;
+using DeveloperMeetUpBookings.Repository.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -41,7 +41,7 @@ namespace DeveloperMeetUpBookings.Repository
             var container = builder.Build();
             config.DependencyResolver = new AutofacWebApiDependencyResolver(container);
 
-            builder.RegisterType<IBookingRepository>().As<BookingRepository>().InstancePerRequest();
+            builder.RegisterType<IBookingCRUDRepository>().As<BookingCRUDRepository>().InstancePerRequest();
             builder.RegisterType<ISeatRepository>().As<SeatRepository>().InstancePerRequest();
         }
     }

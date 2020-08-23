@@ -1,5 +1,6 @@
 ﻿using Autofac;
 using Autofac.Integration.WebApi;
+using DeveloperMeetUpBookings.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -35,6 +36,8 @@ namespace DeveloperMeetUpBookings
 
             // OPTIONAL: Register the Autofac model binder provider.
             builder.RegisterWebApiModelBinderProvider();
+
+            builder.RegisterType<IBookingService>().As<BookingService>().InstancePerRequest();
 
             // Set the dependency resolver to be Autofac.
             var container = builder.Build();

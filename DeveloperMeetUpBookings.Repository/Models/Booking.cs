@@ -16,5 +16,7 @@ namespace DeveloperMeetUpBookings.Repository
         public virtual string Address { get; set; }
 
         public virtual string SeatId { get; set; }
+
+        public virtual string MeetingWeek { get; set; }
     }
 }

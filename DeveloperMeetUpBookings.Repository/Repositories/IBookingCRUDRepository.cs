@@ -5,10 +5,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace DeveloperMeetUpBookings.NHibernate.Repositories
+namespace DeveloperMeetUpBookings.Repository.Repositories
 {
-    public interface IBookingRepository
+    public interface IBookingCRUDRepository
     {
-        void InsertBooking(Booking booking);
+        Booking InsertBooking(Booking booking);
     }
 }
